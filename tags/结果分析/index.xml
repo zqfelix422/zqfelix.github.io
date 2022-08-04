@@ -21,10 +21,10 @@
 &lt;p&gt;#选1（protein）和0（system）&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;3. 计算RMSD&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;gmx rms -s md.tpr -f mdclean.xtc -o rmsd.xvg -tu ns&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;#选1（protein）和1（protein）&lt;/p&gt;
+&lt;p&gt;#选1（backbone)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;4. 计算30~50ns的RMSF&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;gmx rmsf -s md.tpr -f mdclean.xtc -b 30000 -e 50000 -o rmsf.xvg -res&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;#选1（protein）&lt;/p&gt;
+&lt;p&gt;#选1（backbone）&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;5. 导出20~30ns的轨迹文件&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;gmx trjconv -f mdclean.xtc -b 20000 -e 30000 -o 2030ns.xtc -skip 5&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;6. 生成某时间段的平均结构&lt;/strong&gt;（用-b， -e限制时间，如-b 1000 -e 2000指：从第1000ps开始到2000ps）&lt;/p&gt;
@@ -63,7 +63,7 @@
 &lt;li&gt;&lt;strong&gt;计算回旋半径&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;code&gt;gmx gyrate -s md.tpr -f mdclean.xtc -o fws-gyrate.xvg&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;#选择1Protein并回车&lt;/p&gt;
+&lt;p&gt;#选择1（Protein）并回车&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;回旋半径可以表征蛋白质结构的紧实度，同样也可以依靠回旋半径来表征模拟过程中蛋白质的肽链松散程度的变化。&lt;/li&gt;
 &lt;/ul&gt;

@@ -25,10 +25,17 @@
 &lt;h2 id=&#34;修改默认参数&#34;&gt;修改默认参数&lt;/h2&gt;
 &lt;p&gt;在hugo server调式页面完成后，使用命令hugo生成hugo静态页面。&lt;/p&gt;
 &lt;p&gt;注意！！！在生成静态页面之前要把config.toml文件中的baseURL修改为自己博客的网址，譬如&lt;/p&gt;
-&lt;p&gt;baseURL = &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;https://caecarxu.github.io/%22&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://caecarxu.github.io/&#34;&lt;/a&gt;
-hugo    #生成静态页面文件&lt;/p&gt;
-&lt;p&gt;在命令执行后，出现一个public文件夹，里面就是网站的静态页面文件&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;baseURL = &amp;#34;https://caecarxu.github.io/&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo    #生成静态页面文件
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;在命令执行后，出现一个public文件夹，里面就是网站的静态页面文件&lt;/p&gt;
 &lt;p&gt;进入public文件夹，使用git上传文件&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
