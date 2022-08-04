@@ -419,9 +419,14 @@ hugo    #生成静态页面文件</p>
 </div>
 </div><p>提示以下，commit -m 后面的东西是此次提交的备注，通常用来说明提交人的名字</p>
 <h3 id="注意事项">注意事项：</h3>
-<p>发布的话，draft 要为 false 格式。</p>
-<p>关键词需要copy 已有的格式的，然后再自行修改，否则不会被识别</p>
-<p>图片路径要跟文档在一个目录下</p>
+<ol>
+<li>发布的话，draft 要为 false 格式。</li>
+<li>关键词需要copy 已有的格式的，然后再自行修改，否则不会被识别</li>
+<li>图片路径要跟文档在一个目录下</li>
+<li>Hugo 图片插入问题
+hugo图片插入，大多数人的做法大多是将其放在一个目录下，比如说static.
+更简单的解决方法就是，不直接生成md文件作为某一篇post，而 <code>hugo new 新建文件夹</code> ，然后在其中创建文件夹，文件夹中存放index.md才是post的内容，多了一层。这样的好处就是，在这个post目录下，图片的pic文件夹就和md文件同级，可以引用，同时，hugo也会生成相应的目录，完美解决了图片的问题。</li>
+</ol>
 <h2 id="参考网站">参考网站</h2>
 <ol>
 <li><a class="link" href="https://www.bilibili.com/video/BV15f4y157a6/?vd_source=f22a0f999f0aae1e6b4de06efdc8d78d"  target="_blank" rel="noopener"
