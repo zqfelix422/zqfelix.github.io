@@ -6,13 +6,21 @@
         <description>Recent content in Categories on zqfelix&#39;s note</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 24 Jul 2022 18:14:35 +0800</lastBuildDate><atom:link href="https://zqfelix.top/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Test</title>
-        <link>https://zqfelix.top/categories/test/</link>
+        <lastBuildDate>Thu, 04 Aug 2022 10:00:35 +0800</lastBuildDate><atom:link href="https://zqfelix.top/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Gromacs</title>
+        <link>https://zqfelix.top/categories/gromacs/</link>
+        <pubDate>Thu, 04 Aug 2022 10:00:35 +0800</pubDate>
+        
+        <guid>https://zqfelix.top/categories/gromacs/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Study</title>
+        <link>https://zqfelix.top/categories/study/</link>
         <pubDate>Sun, 24 Jul 2022 18:14:35 +0800</pubDate>
         
-        <guid>https://zqfelix.top/categories/test/</guid>
-        <description>&lt;img src="https://zqfelix.top/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
+        <guid>https://zqfelix.top/categories/study/</guid>
+        <description></description>
         </item>
         <item>
         <title>syntax</title>
@@ -29,6 +37,14 @@
         
         <guid>https://zqfelix.top/categories/themes/</guid>
         <description></description>
+        </item>
+        <item>
+        <title>Test</title>
+        <link>https://zqfelix.top/categories/test/</link>
+        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://zqfelix.top/categories/test/</guid>
+        <description>&lt;img src="https://zqfelix.top/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
         </item>
         <item>
         <title>Test with whitespaces</title>

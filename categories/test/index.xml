@@ -6,36 +6,7 @@
         <description>Recent content in Test on zqfelix&#39;s note</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 24 Jul 2022 18:14:35 +0800</lastBuildDate><atom:link href="https://zqfelix.top/categories/test/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Test</title>
-        <link>https://zqfelix.top/p/test/</link>
-        <pubDate>Sun, 24 Jul 2022 18:14:35 +0800</pubDate>
-        
-        <guid>https://zqfelix.top/p/test/</guid>
-        <description>&lt;img src="https://zqfelix.top/p/test/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Test" /&gt;&lt;h2 id=&#34;test&#34;&gt;test&lt;/h2&gt;
-&lt;p&gt;hello hugo-stack  [https://docs.stack.jimmycai.com/zh/writing/]&lt;/p&gt;
-&lt;p&gt;参考视频网站：
-&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV15f4y157a6/?vd_source=f22a0f999f0aae1e6b4de06efdc8d78d&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.bilibili.com/video/BV15f4y157a6/?vd_source=f22a0f999f0aae1e6b4de06efdc8d78d&lt;/a&gt;
-hugo 中文文档 &lt;a class=&#34;link&#34; href=&#34;https://www.gohugo.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.gohugo.org/&lt;/a&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;先下载 hugo-extend 版本 &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/releases?spm=a2c6h.12873639.article-detail.10.74325ec5MXurIA&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/gohugoio/hugo/releases?spm=a2c6h.12873639.article-detail.10.74325ec5MXurIA&lt;/a&gt; , 并设置环境变量&lt;/li&gt;
-&lt;li&gt;hugo new site 用户名 （新建用户文件夹）&lt;/li&gt;
-&lt;li&gt;下载 hugo-theme-stack  放到用户目录下的themes 下面,将assets 和 archetypes 文件夹剪切到文件夹主目录下,替换，将exampleSite 的config.yaml和content 拷贝到用户主目录下，将config.toml &amp;ndash;&amp;gt; config_backup.toml&lt;/li&gt;
-&lt;li&gt;hugo new post/test/index.md  创建新的文件&lt;/li&gt;
-&lt;li&gt;hugo server  打开服务器。默认地址（http://localhost:1313/）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;#修改默认参数&lt;/p&gt;
-&lt;p&gt;在config.yaml 中查找修改。&lt;/p&gt;
-&lt;p&gt;#注意事项：
-发布的话，draft 要为 false 格式。
-关键词需要copy 已有的格式的，然后再自行修改，否则不会被识别
-图片路径要跟文档在一个目录下&lt;/p&gt;
-</description>
-        </item>
-        <item>
+        <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://zqfelix.top/categories/test/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Placeholder Text</title>
         <link>https://zqfelix.top/p/placeholder-text/</link>
         <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>

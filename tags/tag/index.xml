@@ -7,18 +7,13 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Sun, 24 Jul 2022 18:14:35 +0800</lastBuildDate><atom:link href="https://zqfelix.top/tags/tag/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Test</title>
-        <link>https://zqfelix.top/p/test/</link>
+        <title>hugo study</title>
+        <link>https://zqfelix.top/p/hugo-study/</link>
         <pubDate>Sun, 24 Jul 2022 18:14:35 +0800</pubDate>
         
-        <guid>https://zqfelix.top/p/test/</guid>
-        <description>&lt;img src="https://zqfelix.top/p/test/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Test" /&gt;&lt;h2 id=&#34;test&#34;&gt;test&lt;/h2&gt;
-&lt;p&gt;hello hugo-stack  [https://docs.stack.jimmycai.com/zh/writing/]&lt;/p&gt;
-&lt;p&gt;参考视频网站：
-&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV15f4y157a6/?vd_source=f22a0f999f0aae1e6b4de06efdc8d78d&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.bilibili.com/video/BV15f4y157a6/?vd_source=f22a0f999f0aae1e6b4de06efdc8d78d&lt;/a&gt;
-hugo 中文文档 &lt;a class=&#34;link&#34; href=&#34;https://www.gohugo.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.gohugo.org/&lt;/a&gt;&lt;/p&gt;
+        <guid>https://zqfelix.top/p/hugo-study/</guid>
+        <description>&lt;img src="https://zqfelix.top/p/hugo-study/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post hugo study" /&gt;&lt;h2 id=&#34;hugo-搭建个人网站&#34;&gt;Hugo 搭建个人网站&lt;/h2&gt;
+&lt;p&gt;hello hugo-stack&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;先下载 hugo-extend 版本 &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/releases?spm=a2c6h.12873639.article-detail.10.74325ec5MXurIA&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/gohugoio/hugo/releases?spm=a2c6h.12873639.article-detail.10.74325ec5MXurIA&lt;/a&gt; , 并设置环境变量&lt;/li&gt;
@@ -27,12 +22,67 @@ hugo 中文文档 &lt;a class=&#34;link&#34; href=&#34;https://www.gohugo.org/&#
 &lt;li&gt;hugo new post/test/index.md  创建新的文件&lt;/li&gt;
 &lt;li&gt;hugo server  打开服务器。默认地址（http://localhost:1313/）&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;#修改默认参数&lt;/p&gt;
-&lt;p&gt;在config.yaml 中查找修改。&lt;/p&gt;
-&lt;p&gt;#注意事项：
-发布的话，draft 要为 false 格式。
-关键词需要copy 已有的格式的，然后再自行修改，否则不会被识别
-图片路径要跟文档在一个目录下&lt;/p&gt;
+&lt;h2 id=&#34;修改默认参数&#34;&gt;修改默认参数&lt;/h2&gt;
+&lt;p&gt;在hugo server调式页面完成后，使用命令hugo生成hugo静态页面。&lt;/p&gt;
+&lt;p&gt;注意！！！在生成静态页面之前要把config.toml文件中的baseURL修改为自己博客的网址，譬如&lt;/p&gt;
+&lt;p&gt;baseURL = &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;https://caecarxu.github.io/%22&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://caecarxu.github.io/&#34;&lt;/a&gt;
+hugo    #生成静态页面文件&lt;/p&gt;
+&lt;p&gt;在命令执行后，出现一个public文件夹，里面就是网站的静态页面文件&lt;/p&gt;
+&lt;p&gt;进入public文件夹，使用git上传文件&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cd public
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git init    #初始化仓库
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git remote add origin https://github.com/caecarxu/caecarxu.github.io.git    #链接远程仓库
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &amp;#34;first commit&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push -u origin master 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;更新文章&#34;&gt;更新文章&lt;/h2&gt;
+&lt;p&gt;在此之后更新文章，先使用hugo new 创建新的目录,然后按照格式撰写，图片放在static 文件夹。 可以打开hugo server 预览, 边写边修改样式。&lt;/p&gt;
+&lt;p&gt;生成新的静态页面，并使用git push进行同步&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cd public
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git status
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &amp;#34;add blog post&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;提示以下，commit -m 后面的东西是此次提交的备注，通常用来说明提交人的名字&lt;/p&gt;
+&lt;h3 id=&#34;注意事项&#34;&gt;注意事项：&lt;/h3&gt;
+&lt;p&gt;发布的话，draft 要为 false 格式。&lt;/p&gt;
+&lt;p&gt;关键词需要copy 已有的格式的，然后再自行修改，否则不会被识别&lt;/p&gt;
+&lt;p&gt;图片路径要跟文档在一个目录下&lt;/p&gt;
+&lt;h2 id=&#34;参考网站&#34;&gt;参考网站&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV15f4y157a6/?vd_source=f22a0f999f0aae1e6b4de06efdc8d78d&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.bilibili.com/video/BV15f4y157a6/?vd_source=f22a0f999f0aae1e6b4de06efdc8d78d&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;hugo 中文文档 &lt;a class=&#34;link&#34; href=&#34;https://www.gohugo.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.gohugo.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.stack.jimmycai.com/zh/writing/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://docs.stack.jimmycai.com/zh/writing/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/397612900&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://zhuanlan.zhihu.com/p/397612900&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         </item>
         
