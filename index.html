@@ -9,11 +9,11 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="hugo site">
 
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/zqfelix.github.io/css/style.css">
 	<link rel="stylesheet" href="/res/css/custom.css">
-	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="hugo site">
+	<link rel="alternate" type="application/rss+xml" href="/zqfelix.github.io/index.xml" title="hugo site">
 
-	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="shortcut icon" href="/zqfelix.github.io/favicon.ico">
 		
 </head>
 <body class="body">
@@ -22,7 +22,7 @@
 	<div class="container header__container">
 		
 	<div class="logo">
-		<a class="logo__link" href="/" title="hugo site" rel="home">
+		<a class="logo__link" href="/zqfelix.github.io" title="hugo site" rel="home">
 			<div class="logo__item logo__text">
 					<div class="logo__title">hugo site</div>
 					<div class="logo__tagline">网站子标题</div>
@@ -36,28 +36,28 @@
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
-			<a class="menu__link" href="/posts/">
+			<a class="menu__link" href="/zqfelix.github.io/posts/">
 				
 				<span class="menu__text">博客文章</span>
 				
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="/categories/">
+			<a class="menu__link" href="/zqfelix.github.io/categories/">
 				
 				<span class="menu__text">所有分类</span>
 				
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="/tags/">
+			<a class="menu__link" href="/zqfelix.github.io/tags/">
 				
 				<span class="menu__text">所有标签</span>
 				
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="/about/">
+			<a class="menu__link" href="/zqfelix.github.io/about/">
 				
 				<span class="menu__text">关于我</span>
 				
@@ -72,16 +72,24 @@
 			<div class="primary">
 			
 <main class="main list" role="main">
+	<article class="list__item post">
 	
-		<div class="warning">
-			<svg class="warning__icon icon icon-files" width="96" height="96" viewBox="0 0 384 384"><path d="m368 64h-224-16v16 288 16h16 224 16v-16-288-16zm-16 288h-192v-256h192zm-320-320h192v16h32v-32-16h-16-224-16v16 288 16h16 96v-32h-80zm144 272h160v-32h-160zm0-64h160v-32h-160zm0-64h160v-32h-160zm-128 64h64v-32h-64zm0-64h64v-32h-64zm0-64h64v-32h-64z"/></svg>
-			<h3 class="warning__headline">目前还没有任何内容！</h3>
-			<div class="warning__text">
-				<p class="warning__description">在 <b>content</b> 目录下的任意文件夹（板块）中发布内容后，它就会显示在这里。只有一个板块的内容（默认文章最多的文件夹）会显示在主页面上</p>
-				<p class="warning__tip"><b>提示:</b> 您可以通过 <b><a href="https://gohugo.io/functions/where/#mainsections" rel="nofollow noopener" target="_blank">mainSections</a></b> 参数来控制展示您想要展示的板块内容。</p>
-			</div>
-		</div>
-	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/zqfelix.github.io/posts/hello-hugo/" rel="bookmark">
+			Hello Hugo
+			</a>
+		</h2>
+		<div class="list__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">姓名</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-01-01T20:31:15&#43;08:00">January 01, 2023</time></div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		hello hugo
+	</div>
+</article>
 </main>
 
 
@@ -92,8 +100,16 @@
 			<input class="widget-search__field" type="search" placeholder="搜索…" value="" name="q" aria-label="搜索…">
 		</label>
 		<input class="widget-search__submit" type="submit" value="Search">
-		<input type="hidden" name="sitesearch" value="https://zqfelix.top">
+		<input type="hidden" name="sitesearch" value="https://zqfelix422/zqfelix.github.io">
 	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">近期文章</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/zqfelix.github.io/posts/hello-hugo/">Hello Hugo</a></li>
+		</ul>
+	</div>
 </div>
 <div class="widget-social widget">
 	<h4 class="widget-social__title widget__title">社交</h4>
@@ -126,6 +142,6 @@
 	</div>
 </footer>
 	</div>
-<script async defer src="/js/menu.js"></script>
+<script async defer src="/zqfelix.github.io/js/menu.js"></script>
 <script src="/res/js/custom.js"></script></body>
 </html>
