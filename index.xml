@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hugo site</title>
-    <link>https://zqfelix422/zqfelix.github.io/</link>
+    <link>https://zqfelix.top/</link>
     <description>Recent content on hugo site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 01 Jan 2023 20:31:15 +0800</lastBuildDate><atom:link href="https://zqfelix422/zqfelix.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Jan 2023 20:31:15 +0800</lastBuildDate><atom:link href="https://zqfelix.top/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello Hugo</title>
-      <link>https://zqfelix422/zqfelix.github.io/posts/hello-hugo/</link>
+      <link>https://zqfelix.top/posts/hello-hugo/</link>
       <pubDate>Sun, 01 Jan 2023 20:31:15 +0800</pubDate>
       
-      <guid>https://zqfelix422/zqfelix.github.io/posts/hello-hugo/</guid>
+      <guid>https://zqfelix.top/posts/hello-hugo/</guid>
       <description>hello hugo</description>
     </item>
     
