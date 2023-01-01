@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on hugo site</title>
+    <title>Categories on Felix&#39;s Note</title>
     <link>https://zqfelix.top/categories/</link>
-    <description>Recent content in Categories on hugo site</description>
+    <description>Recent content in Categories on Felix&#39;s Note</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="https://zqfelix.top/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 01 Jan 2023 21:39:25 +0800</lastBuildDate><atom:link href="https://zqfelix.top/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>https://zqfelix.top/categories/hugo/</link>
+      <pubDate>Sun, 01 Jan 2023 21:39:25 +0800</pubDate>
+      
+      <guid>https://zqfelix.top/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

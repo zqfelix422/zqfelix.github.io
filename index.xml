@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hugo site</title>
+    <title>Felix&#39;s Note</title>
     <link>https://zqfelix.top/</link>
-    <description>Recent content on hugo site</description>
+    <description>Recent content on Felix&#39;s Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 01 Jan 2023 20:31:15 +0800</lastBuildDate><atom:link href="https://zqfelix.top/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Jan 2023 21:39:25 +0800</lastBuildDate><atom:link href="https://zqfelix.top/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hello Hugo</title>
-      <link>https://zqfelix.top/posts/hello-hugo/</link>
-      <pubDate>Sun, 01 Jan 2023 20:31:15 +0800</pubDate>
+      <title>Hugo配置</title>
+      <link>https://zqfelix.top/posts/hugo%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sun, 01 Jan 2023 21:39:25 +0800</pubDate>
       
-      <guid>https://zqfelix.top/posts/hello-hugo/</guid>
-      <description>hello hugo</description>
+      <guid>https://zqfelix.top/posts/hugo%E9%85%8D%E7%BD%AE/</guid>
+      <description>Hugo 搭建个人网站 使用的是mainroad 主题 安装Hugo 软件 先下载 hugo-extend 版本 https://github.com/gohugoio/hugo/releases?spm=a2c6h.12873639.article-detail.10.74325ec5MXurIA , 并设置环境变量 创建站点 #新</description>
+    </item>
+    
+    <item>
+      <title>文章归档</title>
+      <link>https://zqfelix.top/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zqfelix.top/archives/</guid>
+      <description>历史文章按照年月归档.</description>
     </item>
     
   </channel>

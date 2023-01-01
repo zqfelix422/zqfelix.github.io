@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Hugo配置 - Felix&#39;s Note</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/res/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Felix&#39;s Note" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Felix&#39;s Note</div>
+					<div class="logo__tagline">长风破浪会有时，直挂云帆济沧海</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">菜单</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/posts/">
+				
+				<span class="menu__text">博客文章</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/">
+				
+				<span class="menu__text">所有分类</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tags/">
+				
+				<span class="menu__text">所有标签</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">关于我</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/archives/">
+				
+				<span class="menu__text">文章归档</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Hugo配置</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">Author</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-01-01T21:39:25&#43;08:00">January 01, 2023</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/hugo/" rel="category">Hugo</a>
+	</span>
+</div></div>
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">目录</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#安装hugo-软件">安装Hugo 软件</a></li>
+    <li><a href="#创建站点">创建站点</a></li>
+    <li><a href="#生成静态页面">生成静态页面</a></li>
+    <li><a href="#更新文章">更新文章</a></li>
+    <li><a href="#文章资源管理">文章资源管理</a>
+      <ul>
+        <li><a href="#注意事项">注意事项：</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h1 id="hugo-搭建个人网站">Hugo 搭建个人网站</h1>
+<p>使用的是mainroad 主题</p>
+<h2 id="安装hugo-软件">安装Hugo 软件</h2>
+<p>先下载 hugo-extend 版本 <a href="https://github.com/gohugoio/hugo/releases?spm=a2c6h.12873639.article-detail.10.74325ec5MXurIA">https://github.com/gohugoio/hugo/releases?spm=a2c6h.12873639.article-detail.10.74325ec5MXurIA</a> , 并设置环境变量</p>
+<h2 id="创建站点">创建站点</h2>
+<pre tabindex="0"><code>#新建一个usrname文件夹
+hugo new site usrname  
+cd  usrname
+（hugo会自动生成此文件夹：
+包含archetypes、content、layouts、static、config.toml）
+
+#加入git进行管理
+git init
+#添加主题
+git submodule add https://github.com/vimux/mainroad themes/mainroad  
+（或者可以在github网页下载zip文件，在theme文件夹内解压）
+
+#创建新文件
+hugo new post/index.md 
+（新文件地址在usrname/content/post文件夹下） 
+（新文件的模板在usrname/archtypes/default.md)
+
+#设置 config.toml 文件（下一步讲，如果不设置toml文件，自动生成的网站一片空白）
+
+#测试生成的网页
+hugo server -D -p 8080 #在浏览器中访问 http://127.0.0.1:8080 即可测试站点是否工作
+</code></pre><p>##配置
+编辑 config.toml,此处参考的他人的配置文件<code>https://migueltek.com/posts/refresh-my-blog/</code> 和<code>https://39.105.69.237/en/posts/linux/migrate_wordpress_blog_to_hugo/</code>:</p>
+<pre tabindex="0"><code># 站点名称
+title = &#34;hugo site&#34;
+# 站点 URL
+baseURL = &#34;/&#34;  #在这里填入自己的网站名/github pages
+# 使用 themes/ 中的哪个主题, 注意大小写
+theme = &#34;mainroad&#34;
+
+# hugo 发布设置, 发布生成的文件夹路径
+publishDir = &#34;../publish&#34;  #参考的博客此处将../publish 改为 ../public
+# 是否清理发布文件夹中多余的文件
+cleanDestinationDir = true
+</code></pre><h2 id="生成静态页面">生成静态页面</h2>
+<p>注意！！！此处进行之前，一定要修改config.toml文件里的<code>baseURL</code>。</p>
+<pre tabindex="0"><code>#生成静态页面，
+hugo
+(此时会生成一个public文件夹，里面会生成多个文件，即为静态网站页面，进入public文件夹，使用git上传文件）
+cd public
+git init    #初始化仓库
+git remote add origin https://github.com/caecarxu/caecarxu.github.io.git    #链接远程仓库
+git add .
+git commit -m &#34;first commit&#34;
+git push -u origin master 
+</code></pre><p>此时，如果搭建了个人域名的GitHub page页面时，需要单独创建一个CNAME文件，文件内容为<code>你的username.github.io或者个人域名，不加http</code>，然后上传至github。否则，个人域名无法与githu.io.git 的内容连接起来。
+由于每次使用hugo命令在/public子目录生成静态网页的时候该CNAME文件都会被删除，所以最好将该文件放在<code>usrname/static</code>子目录中，这样运行hugo后该CNAME文件将自动复制到/public目录中。</p>
+<h2 id="更新文章">更新文章</h2>
+<p>在此之后更新文章，先使用hugo new 创建新的目录,然后按照格式撰写。 可以打开hugo server 预览, 边写边修改样式。</p>
+<p>生成新的静态页面，并使用git push进行同步</p>
+<pre tabindex="0"><code>#切换到public文件夹下
+cd public
+git add .
+git commit -m &#34;add blog post&#34;
+git push
+</code></pre><p>提示以下，commit -m 后面的东西是此次提交的备注，通常用来说明提交人的名字</p>
+<h2 id="文章资源管理">文章资源管理</h2>
+<p>将文章与资源 (图片/附件等) 放在一起管理, 这样写 md 时轻松一点, 且可以看出资源文件和文章的关系.</p>
+<p>例如:</p>
+<pre tabindex="0"><code>content/posts/post-title/index.md
+content/posts/post-title/figure.jpg
+</code></pre><p>##新建归档功能
+参考<code>https://xbc.me/how-to-create-an-archives-page-with-hugo/</code></p>
+<h3 id="注意事项">注意事项：</h3>
+<ol>
+<li>发布的话，draft 要为 false 格式。</li>
+<li>关键词需要copy 已有的格式的，然后再自行修改，否则不会被识别</li>
+<li>图片路径要跟文档在一个目录下</li>
+<li>Hugo 图片插入问题
+hugo图片插入，大多数人的做法大多是将其放在一个目录下，比如说static.
+更简单的解决方法就是，不直接生成md文件作为某一篇post，而 <code>hugo new 新建文件夹</code> ，然后在其中创建文件夹，文件夹中存放index.md才是post的内容，多了一层。这样的好处就是，在这个post目录下，图片的pic文件夹就和md文件同级，可以引用，同时，hugo也会生成相应的目录，完美解决了图片的问题。</li>
+</ol>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/hugo/" rel="tag">Hugo</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<div class="authorbox__header">
+		<span class="authorbox__name">关于 Author</span>
+	</div>
+	<div class="authorbox__description">
+		仰天大笑出门去，我辈岂是蓬蒿人
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/archives/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;上一篇</span>
+			<p class="pager__title">文章归档</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="搜索…" value="" name="q" aria-label="搜索…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://zqfelix.top">
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">近期文章</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/posts/hugo%E9%85%8D%E7%BD%AE/">Hugo配置</a></li>
+			<li class="widget__item"><a class="widget__link" href="/archives/">文章归档</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">分类</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/hugo/">Hugo</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">标签</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (1)</a>
+	</div>
+</div>
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">社交</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/github%20zqfelix422" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Email" href="mailto:2318015076@qq.com">
+				<svg class="widget-social__link-icon icon icon-mail" width="24" height="24" viewBox="0 0 416 288"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg>
+				<span>2318015076@qq.com</span>
+			</a>
+		</div>
+
+		
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2023 版权所有.
+			<span class="footer__copyright-credits">基于 <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> 引擎和 <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> 主题</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/res/js/custom.js"></script></body>
+</html>
