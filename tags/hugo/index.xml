@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on Felix&#39;s Note</title>
+    <title>hugo on Felix&#39;s Note</title>
     <link>https://zqfelix.top/tags/hugo/</link>
-    <description>Recent content in Hugo on Felix&#39;s Note</description>
+    <description>Recent content in hugo on Felix&#39;s Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 01 Jan 2023 21:39:25 +0800</lastBuildDate><atom:link href="https://zqfelix.top/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
@@ -14,6 +14,18 @@
       
       <guid>https://zqfelix.top/posts/hugo%E9%85%8D%E7%BD%AE/</guid>
       <description>Hugo 搭建个人网站 使用的是mainroad 主题 安装Hugo 软件 先下载 hugo-extend 版本 https://github.com/gohugoio/hugo/releases?spm=a2c6h.12873639.article-detail.10.74325ec5MXurIA , 并设置环境变量 创建站点 #新</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>https://zqfelix.top/basic/getting-started-with-hugo/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://zqfelix.top/basic/getting-started-with-hugo/</guid>
+      <description>Step 1. Install Hugo Go to Hugo releases and download the appropriate version for your OS and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at Install Hugo
+Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.</description>
     </item>
     
   </channel>

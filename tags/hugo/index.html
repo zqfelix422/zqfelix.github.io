@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Hugo - Felix&#39;s Note</title>
+	<title>hugo - Felix&#39;s Note</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 
@@ -20,9 +20,11 @@
 		<header class="header">
 	<div class="container header__container">
 		
-	<div class="logo">
+	<div class="logo logo--mixed">
 		<a class="logo__link" href="/" title="Felix&#39;s Note" rel="home">
-			<div class="logo__item logo__text">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/logo.jpeg">
+				</div><div class="logo__item logo__text">
 					<div class="logo__title">Felix&#39;s Note</div>
 					<div class="logo__tagline">长风破浪会有时，直挂云帆济沧海</div>
 				</div>
@@ -34,6 +36,13 @@
 		<span class="menu__btn-title" tabindex="-1">菜单</span>
 	</button>
 	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/mainpage/">
+				
+				<span class="menu__text">主页</span>
+				
+			</a>
+		</li>
 		<li class="menu__item">
 			<a class="menu__link" href="/posts/">
 				
@@ -56,6 +65,13 @@
 			</a>
 		</li>
 		<li class="menu__item">
+			<a class="menu__link" href="/life/">
+				
+				<span class="menu__text">Life</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
 			<a class="menu__link" href="/about/">
 				
 				<span class="menu__text">关于我</span>
@@ -65,7 +81,7 @@
 		<li class="menu__item">
 			<a class="menu__link" href="/archives/">
 				
-				<span class="menu__text">文章归档</span>
+				<span class="menu__text">Archives</span>
 				
 			</a>
 		</li>
@@ -79,7 +95,7 @@
 			
 <main class="main list" role="main">
 	<header class="main__header">
-		<h1 class="main__title">Hugo</h1>
+		<h1 class="main__title">hugo</h1>
 	</header><article class="list__item post">
 	
 	<header class="list__header">
@@ -102,6 +118,31 @@
 	<div class="list__footer clearfix">
 		<a class="list__footer-readmore btn" href="/posts/hugo%E9%85%8D%E7%BD%AE/">阅读全文…</a>
 	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/basic/getting-started-with-hugo/" rel="bookmark">
+			Getting Started with Hugo
+			</a>
+		</h2>
+		<div class="list__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">Author</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2014-04-02T00:00:00Z">April 02, 2014</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/development/" rel="category">Development</a>, <a class="meta__link" href="/categories/golang/" rel="category">golang</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Step 1. Install Hugo Go to Hugo releases and download the appropriate version for your OS and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at Install Hugo
+Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/basic/getting-started-with-hugo/">阅读全文…</a>
+	</div>
 </article>
 </main>
 
@@ -121,9 +162,10 @@
 	<h4 class="widget__title">近期文章</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/life/">Life</a></li>
 			<li class="widget__item"><a class="widget__link" href="/posts/happynewyear/">HappyNewYear</a></li>
 			<li class="widget__item"><a class="widget__link" href="/posts/hugo%E9%85%8D%E7%BD%AE/">Hugo配置</a></li>
-			<li class="widget__item"><a class="widget__link" href="/archives/">文章归档</a></li>
+			<li class="widget__item"><a class="widget__link" href="/archives/">Archives</a></li>
 		</ul>
 	</div>
 </div>
@@ -131,6 +173,18 @@
 	<h4 class="widget__title">分类</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/basic/">Basic</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/golang/">golang</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/hugo/">Hugo</a>&nbsp;
 				<span class="widget__counter widget__counter--bubble">1</span>
@@ -146,7 +200,13 @@
 	<h4 class="widget__title">标签</h4>
 	<div class="widget__content">
 		<a class="widget-taglist__link widget__link btn" href="/tags/2023/" title="2023">2023 (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="development">development (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/go/" title="go">go (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/golang/" title="golang">golang (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/html/" title="HTML">HTML (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/templates/" title="templates">templates (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/themes/" title="themes">themes (1)</a>
 	</div>
 </div>
 <div class="widget-social widget">

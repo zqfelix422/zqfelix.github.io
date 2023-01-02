@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://zqfelix.top/life/</loc>
+    <lastmod>2023-01-02T21:42:13+08:00</lastmod>
+  </url><url>
     <loc>https://zqfelix.top/tags/2023/</loc>
     <lastmod>2023-01-01T22:20:37+08:00</lastmod>
   </url><url>
@@ -23,6 +26,9 @@
     <loc>https://zqfelix.top/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2023-01-01T22:20:37+08:00</lastmod>
   </url><url>
+    <loc>https://zqfelix.top/about/</loc>
+    <lastmod>2023-01-01T14:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://zqfelix.top/tags/hugo/</loc>
     <lastmod>2023-01-01T21:39:25+08:00</lastmod>
   </url><url>
@@ -32,6 +38,52 @@
     <loc>https://zqfelix.top/posts/hugo%E9%85%8D%E7%BD%AE/</loc>
     <lastmod>2023-01-01T21:39:25+08:00</lastmod>
   </url><url>
+    <loc>https://zqfelix.top/categories/basic/</loc>
+    <lastmod>2018-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zqfelix.top/basic/basic-elements/</loc>
+    <lastmod>2018-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zqfelix.top/basic/</loc>
+    <lastmod>2018-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zqfelix.top/tags/html/</loc>
+    <lastmod>2018-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zqfelix.top/basic/hugo-template-primer/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zqfelix.top/tags/development/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zqfelix.top/categories/development/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zqfelix.top/basic/getting-started-with-hugo/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zqfelix.top/tags/go/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zqfelix.top/tags/golang/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zqfelix.top/categories/golang/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zqfelix.top/tags/templates/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zqfelix.top/tags/themes/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zqfelix.top/search/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>https://zqfelix.top/archives/</loc>
+  </url><url>
+    <loc>https://zqfelix.top/posts/documentation/</loc>
+  </url><url>
+    <loc>https://zqfelix.top/mainpage/</loc>
   </url>
 </urlset>

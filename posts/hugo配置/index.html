@@ -19,9 +19,11 @@
 		<header class="header">
 	<div class="container header__container">
 		
-	<div class="logo">
+	<div class="logo logo--mixed">
 		<a class="logo__link" href="/" title="Felix&#39;s Note" rel="home">
-			<div class="logo__item logo__text">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/logo.jpeg">
+				</div><div class="logo__item logo__text">
 					<div class="logo__title">Felix&#39;s Note</div>
 					<div class="logo__tagline">长风破浪会有时，直挂云帆济沧海</div>
 				</div>
@@ -33,6 +35,13 @@
 		<span class="menu__btn-title" tabindex="-1">菜单</span>
 	</button>
 	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/mainpage/">
+				
+				<span class="menu__text">主页</span>
+				
+			</a>
+		</li>
 		<li class="menu__item">
 			<a class="menu__link" href="/posts/">
 				
@@ -55,6 +64,13 @@
 			</a>
 		</li>
 		<li class="menu__item">
+			<a class="menu__link" href="/life/">
+				
+				<span class="menu__text">Life</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
 			<a class="menu__link" href="/about/">
 				
 				<span class="menu__text">关于我</span>
@@ -64,7 +80,7 @@
 		<li class="menu__item">
 			<a class="menu__link" href="/archives/">
 				
-				<span class="menu__text">文章归档</span>
+				<span class="menu__text">Archives</span>
 				
 			</a>
 		</li>
@@ -96,13 +112,17 @@
   <ul>
     <li><a href="#安装hugo-软件">安装Hugo 软件</a></li>
     <li><a href="#创建站点">创建站点</a></li>
+    <li><a href="#配置">配置</a></li>
     <li><a href="#生成静态页面">生成静态页面</a></li>
     <li><a href="#更新文章">更新文章</a></li>
-    <li><a href="#文章资源管理">文章资源管理</a>
+    <li><a href="#文章资源管理">文章资源管理</a></li>
+    <li><a href="#hugo新建归档功能">Hugo新建归档功能</a>
       <ul>
-        <li><a href="#注意事项">注意事项：</a></li>
+        <li><a href="#1-新建archives-文档">1. 新建archives 文档</a></li>
+        <li><a href="#2-新建archives-模板">2. 新建archives 模板</a></li>
       </ul>
     </li>
+    <li><a href="#注意事项">注意事项：</a></li>
   </ul>
 </nav>
 	</div>
@@ -133,8 +153,10 @@ hugo new post/index.md
 
 #测试生成的网页
 hugo server -D -p 8080 #在浏览器中访问 http://127.0.0.1:8080 即可测试站点是否工作
-</code></pre><p>##配置
-编辑 config.toml,此处参考的他人的配置文件<code>https://migueltek.com/posts/refresh-my-blog/</code> 和<code>https://39.105.69.237/en/posts/linux/migrate_wordpress_blog_to_hugo/</code>:</p>
+</code></pre><h2 id="配置">配置</h2>
+<p>编辑 config.toml,此处参考的他人的配置文件
+<a href="https://migueltek.com/posts/refresh-my-blog/">https://migueltek.com/posts/refresh-my-blog/</a> 和
+https://39.105.69.237/en/posts/linux/migrate_wordpress_blog_to_hugo/</p>
 <pre tabindex="0"><code># 站点名称
 title = &#34;hugo site&#34;
 # 站点 URL
@@ -173,9 +195,47 @@ git push origin master
 <p>例如:</p>
 <pre tabindex="0"><code>content/posts/post-title/index.md
 content/posts/post-title/figure.jpg
-</code></pre><p>##新建归档功能
-参考<code>https://xbc.me/how-to-create-an-archives-page-with-hugo/</code></p>
-<h3 id="注意事项">注意事项：</h3>
+</code></pre><!-- raw HTML omitted -->
+<h2 id="hugo新建归档功能">Hugo新建归档功能</h2>
+<p>参考https://xbc.me/how-to-create-an-archives-page-with-hugo/</p>
+<h3 id="1-新建archives-文档">1. 新建archives 文档</h3>
+<pre tabindex="0"><code>hugo new posts/archives.md
+</code></pre><!-- raw HTML omitted -->
+<h3 id="2-新建archives-模板">2. 新建archives 模板</h3>
+<p>在文件夹themes/mainload/layouts/_default文件夹下，复制single.html为archives.html。（我自己用的主题为mainload）</p>
+<ul>
+<li>找到{{ .Content }} 这句话替换为下面的内容，<!-- raw HTML omitted -->注意缩进<!-- raw HTML omitted -->:</li>
+</ul>
+<pre tabindex="0"><code>  {{ $type := .Type }}
+    {{ $.Scratch.Set &#34;count&#34; 1 }}
+
+  {{ range (.Site.RegularPages.GroupByDate &#34;2006&#34;) }}
+    {{ if and (gt .Key 1) (gt (where .Pages &#34;Type&#34; $type) 0) }}
+
+    {{ range (where .Pages &#34;Type&#34; $type) }}
+      {{ if (eq ($.Scratch.Get &#34;count&#34;) 1) }}
+      {{ $.Scratch.Set &#34;count&#34; 0 }}
+      &lt;h1 class=&#34;title is-4 has-text-weight-normal&#34;&gt;{{ .Date.Format &#34;2006&#34; }}&lt;/h1&gt;
+      {{ end }}
+    {{ end }}
+
+    {{ $.Scratch.Set &#34;count&#34; 1 }}
+
+      &lt;ul class=&#34;article__list&#34;&gt;
+      {{ range (where .Pages &#34;Type&#34; $type) }}
+      {{ if (ne .Params.hidden true) }}
+        &lt;li&gt;
+        &lt;a class=&#34;is-block&#34; href=&#34;{{ .RelPermalink }}&#34;&gt;
+          &lt;span class=&#34;has-text-grey-dark&#34;&gt;{{ .PublishDate.Format &#34;2006-01-02&#34;  }}&lt;/span&gt; — {{ .Title }}
+        &lt;/a&gt;
+        &lt;/li&gt;
+      {{ end }}
+      {{ end }}
+      &lt;/ul&gt;
+  {{ end }}
+  {{ end }}
+</code></pre><p>此时，运行hugo server 就可以看到归档的目录了。</p>
+<h2 id="注意事项">注意事项：</h2>
 <ol>
 <li>发布的话，draft 要为 false 格式。</li>
 <li>关键词需要copy 已有的格式的，然后再自行修改，否则不会被识别</li>
@@ -201,6 +261,9 @@ hugo图片插入，大多数人的做法大多是将其放在一个目录下，�
 </main>
 
 <div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Author avatar" src="/logo2.png" class="avatar" height="90" width="90">
+	</figure>
 	<div class="authorbox__header">
 		<span class="authorbox__name">关于 Author</span>
 	</div>
@@ -210,12 +273,6 @@ hugo图片插入，大多数人的做法大多是将其放在一个目录下，�
 </div>
 
 <nav class="pager flex">
-	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/archives/" rel="prev">
-			<span class="pager__subtitle">«&thinsp;上一篇</span>
-			<p class="pager__title">文章归档</p>
-		</a>
-	</div>
 	<div class="pager__item pager__item--next">
 		<a class="pager__link" href="/posts/happynewyear/" rel="next">
 			<span class="pager__subtitle">下一篇&thinsp;»</span>
@@ -239,9 +296,10 @@ hugo图片插入，大多数人的做法大多是将其放在一个目录下，�
 	<h4 class="widget__title">近期文章</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/life/">Life</a></li>
 			<li class="widget__item"><a class="widget__link" href="/posts/happynewyear/">HappyNewYear</a></li>
 			<li class="widget__item"><a class="widget__link" href="/posts/hugo%E9%85%8D%E7%BD%AE/">Hugo配置</a></li>
-			<li class="widget__item"><a class="widget__link" href="/archives/">文章归档</a></li>
+			<li class="widget__item"><a class="widget__link" href="/archives/">Archives</a></li>
 		</ul>
 	</div>
 </div>
@@ -249,6 +307,18 @@ hugo图片插入，大多数人的做法大多是将其放在一个目录下，�
 	<h4 class="widget__title">分类</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/basic/">Basic</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/golang/">golang</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/hugo/">Hugo</a>&nbsp;
 				<span class="widget__counter widget__counter--bubble">1</span>
@@ -264,7 +334,13 @@ hugo图片插入，大多数人的做法大多是将其放在一个目录下，�
 	<h4 class="widget__title">标签</h4>
 	<div class="widget__content">
 		<a class="widget-taglist__link widget__link btn" href="/tags/2023/" title="2023">2023 (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="development">development (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/go/" title="go">go (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/golang/" title="golang">golang (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/html/" title="HTML">HTML (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/templates/" title="templates">templates (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/themes/" title="themes">themes (1)</a>
 	</div>
 </div>
 <div class="widget-social widget">

@@ -20,9 +20,11 @@
 		<header class="header">
 	<div class="container header__container">
 		
-	<div class="logo">
+	<div class="logo logo--mixed">
 		<a class="logo__link" href="/" title="Felix&#39;s Note" rel="home">
-			<div class="logo__item logo__text">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/logo.jpeg">
+				</div><div class="logo__item logo__text">
 					<div class="logo__title">Felix&#39;s Note</div>
 					<div class="logo__tagline">长风破浪会有时，直挂云帆济沧海</div>
 				</div>
@@ -34,6 +36,13 @@
 		<span class="menu__btn-title" tabindex="-1">菜单</span>
 	</button>
 	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/mainpage/">
+				
+				<span class="menu__text">主页</span>
+				
+			</a>
+		</li>
 		<li class="menu__item">
 			<a class="menu__link" href="/posts/">
 				
@@ -56,6 +65,13 @@
 			</a>
 		</li>
 		<li class="menu__item">
+			<a class="menu__link" href="/life/">
+				
+				<span class="menu__text">Life</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
 			<a class="menu__link" href="/about/">
 				
 				<span class="menu__text">关于我</span>
@@ -65,7 +81,7 @@
 		<li class="menu__item">
 			<a class="menu__link" href="/archives/">
 				
-				<span class="menu__text">文章归档</span>
+				<span class="menu__text">Archives</span>
 				
 			</a>
 		</li>
@@ -118,9 +134,10 @@
 	<h4 class="widget__title">近期文章</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/life/">Life</a></li>
 			<li class="widget__item"><a class="widget__link" href="/posts/happynewyear/">HappyNewYear</a></li>
 			<li class="widget__item"><a class="widget__link" href="/posts/hugo%E9%85%8D%E7%BD%AE/">Hugo配置</a></li>
-			<li class="widget__item"><a class="widget__link" href="/archives/">文章归档</a></li>
+			<li class="widget__item"><a class="widget__link" href="/archives/">Archives</a></li>
 		</ul>
 	</div>
 </div>
@@ -128,6 +145,18 @@
 	<h4 class="widget__title">分类</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/basic/">Basic</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/golang/">golang</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/hugo/">Hugo</a>&nbsp;
 				<span class="widget__counter widget__counter--bubble">1</span>
@@ -143,7 +172,13 @@
 	<h4 class="widget__title">标签</h4>
 	<div class="widget__content">
 		<a class="widget-taglist__link widget__link btn" href="/tags/2023/" title="2023">2023 (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="development">development (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/go/" title="go">go (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/golang/" title="golang">golang (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/html/" title="HTML">HTML (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/templates/" title="templates">templates (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/themes/" title="themes">themes (1)</a>
 	</div>
 </div>
 <div class="widget-social widget">
