@@ -13,7 +13,16 @@
       <pubDate>Sun, 01 Jan 2023 21:39:25 +0800</pubDate>
       
       <guid>https://zqfelix.top/posts/hugo%E9%85%8D%E7%BD%AE/</guid>
-      <description>Hugo 搭建个人网站 使用的是mainroad 主题 安装Hugo 软件 先下载 hugo-extend 版本 https://github.com/gohugoio/hugo/releases?spm=a2c6h.12873639.article-detail.10.74325ec5MXurIA , 并设置环境变量 创建站点 #新</description>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>https://zqfelix.top/posts/basic/getting-started-with-hugo/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://zqfelix.top/posts/basic/getting-started-with-hugo/</guid>
+      <description>Step 1.</description>
     </item>
     
   </channel>

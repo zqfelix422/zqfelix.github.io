@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>golang on Felix&#39;s Note</title>
-    <link>https://zqfelix.top/categories/golang/</link>
-    <description>Recent content in golang on Felix&#39;s Note</description>
+    <title>Basic on Felix&#39;s Note</title>
+    <link>https://zqfelix.top/posts/basic/</link>
+    <description>Recent content in Basic on Felix&#39;s Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://zqfelix.top/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Jan 2023 21:30:04 +0800</lastBuildDate><atom:link href="https://zqfelix.top/posts/basic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic HTML Elements</title>
+      <link>https://zqfelix.top/posts/basic/basic-elements/</link>
+      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://zqfelix.top/posts/basic/basic-elements/</guid>
+      <description>&lt;p&gt;The main purpose of this article is to make sure that all basic HTML Elements are decorated with CSS so as to not miss any possible elements when creating new themes for Hugo.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Getting Started with Hugo</title>
       <link>https://zqfelix.top/posts/basic/getting-started-with-hugo/</link>
